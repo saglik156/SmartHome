@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/black">
+
+    <!-- My Routers Title -->
+    <TextView
+        android:id="@+id/myRoutersTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Routers"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Router Icon -->
+    <ImageView
+        android:id="@+id/routerIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_router" <!-- Replace with your actual drawable -->
+    android:layout_below="@id/myRoutersTitle"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="16dp"/>
+
+    <!-- Router Info -->
+    <TextView
+        android:id="@+id/routerInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tp-Link\nPassword: 2154@4"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/routerIcon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"/>
+
+    <!-- Router Switch -->
+    <Switch
+        android:id="@+id/routerSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/routerInfo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Wifi Statistics Title -->
+    <TextView
+        android:id="@+id/wifiStatisticsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wifi Statistics"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_below="@id/routerSwitch"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentStart="true"/>
+
+    <!-- Wifi Speed Gauge -->
+    <ImageView
+        android:id="@+id/wifiSpeedGauge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_speed_gauge" <!-- Replace with your actual drawable -->
+    android:layout_below="@id/wifiStatisticsTitle"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="16dp"/>
+
+    <!-- Speed Info -->
+    <TextView
+        android:id="@+id/speedInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="42 Mbps Download\n12 Mbps Upload"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/wifiSpeedGauge"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"/>
+
+    <!-- Usage Statistics Title -->
+    <TextView
+        android:id="@+id/usageStatisticsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usage Statistics"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_below="@id/speedInfo"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentStart="true"/>
+
+    <!-- Usage Statistics Chart -->
+    <ImageView
+        android:id="@+id/usageStatisticsChart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_usage_chart" <!-- Replace with your actual drawable -->
+    android:layout_below="@id/usageStatisticsTitle"
+    android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

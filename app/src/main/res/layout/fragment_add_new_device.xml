@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AddNewDeviceFragment">
+
+    <TextView
+        android:id="@+id/textViewLinkNewDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Link new device"
+        android:textSize="18sp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/textViewConnectWithSpace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect with your space"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp"/>
+
+    <ImageView
+        android:id="@+id/imageViewDevice"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_smart_lamp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/device_image"/>
+
+    <TextView
+        android:id="@+id/textViewDeviceNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is your device name?"
+        android:paddingTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextDeviceName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Smart Lamp"
+        android:padding="8dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewDeviceLocationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Where is your device located?"
+        android:paddingBottom="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/buttonLivingRoom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Living room"
+            android:background="@drawable/selector_button_location"
+            android:padding="8dp"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/buttonKitchen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Kitchen"
+            android:background="@drawable/selector_button_location"
+            android:padding="8dp"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/buttonBedroom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Bedroom"
+            android:background="@drawable/selector_button_location"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonContinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:background="@color/primaryColor"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

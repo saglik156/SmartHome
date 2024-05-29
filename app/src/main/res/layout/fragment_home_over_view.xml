@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeOverViewFragment">
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome home, Yiğit"
+        android:textSize="18sp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textViewWeather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="23°C"
+            android:drawableTop="@drawable/ic_weather"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewHumidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="67%"
+            android:drawableTop="@drawable/ic_humidity"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/buttonAllLightsOn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_light"
+            android:text="All lights on" />
+
+        <Button
+            android:id="@+id/buttonPlayMusic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_music"
+            android:text="Play music" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewDevices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Devices"
+        android:textSize="16sp"
+        android:paddingTop="8dp"
+        android:layout_gravity="center"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewDevices"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:listitem="@layout/item_device" />
+
+    <TextView
+        android:id="@+id/textViewSeeMoreDevices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="see more devices..."
+        android:layout_gravity="center"
+        android:padding="8dp"/>
+
+</FrameLayout>
